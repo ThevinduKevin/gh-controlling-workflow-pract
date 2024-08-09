@@ -7,6 +7,10 @@ on:
         required: false
         default: dist
         type: string
+    outputs:
+      result:
+        description: The name of the deployable artifact files
+        value: ${{jobs.deploy.outcome}}
     secrets:
       some-secret:
         required: false # we can use this secret when we use this file
