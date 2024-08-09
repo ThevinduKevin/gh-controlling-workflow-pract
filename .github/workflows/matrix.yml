@@ -25,3 +25,6 @@ jobs:
         run: npm ci
       - name: Build project
         run: npm run build 
+
+        # we can reuse workflows like
+        # uses: ./.github/workflow/execution-flow.yml
